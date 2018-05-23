@@ -1,0 +1,16 @@
+\babel@toc {polish}{}
+\contentsline {section}{\numberline {1}Wprowadzenie}{2}
+\contentsline {subsection}{\numberline {1.1}Cel projektu}{2}
+\contentsline {subsection}{\numberline {1.2}Sprz\IeC {\k e}t}{2}
+\contentsline {subsection}{\numberline {1.3}Teoria}{2}
+\contentsline {section}{\numberline {2}Projekt}{3}
+\contentsline {subsection}{\numberline {2.1}Hierarchia}{3}
+\contentsline {subsection}{\numberline {2.2}Schemat}{3}
+\contentsline {subsection}{\numberline {2.3}Opis modu\IeC {\l }u}{3}
+\contentsline {subsubsection}{\numberline {2.3.1}Stany}{3}
+\contentsline {subsection}{\numberline {2.4}Symulacja}{3}
+\contentsline {section}{\numberline {3}Implementacja}{4}
+\contentsline {section}{\numberline {4}Podsumowanie}{5}
+\contentsline {subsection}{\numberline {4.1}Ocena krytyczna}{5}
+\contentsline {subsection}{\numberline {4.2}Wnioski}{5}
+\contentsline {section}{Literatura}{6}

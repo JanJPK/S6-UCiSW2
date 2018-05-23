@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{zsk}
+dr~inż Jarosław~Sugier.
+\newblock Strona zestawu spartan-3e.
+\newblock zsk.ict.pwr.wroc.pl/zsk\_ftp/fpga/.
+
+\bibitem{wave}
+C.~Stuart.
+\newblock Microsoft wave soundfile format.
+\newblock soundfile.sapp.org/doc/WaveFormat/.
+
+\bibitem{ug230}
+Xilinx.
+\newblock {\em Spartan-3E FPGA Starter Kit Board User Guide}.
+\newblock xilinx.com/support/documentation/boards\_and\_kits/ug230.pdf
+\end{thebibliography}

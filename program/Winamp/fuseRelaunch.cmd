@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Module1_Test_isim_beh.exe" -prj "C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Module1_Test_beh.prj" "work.Module1_Test" 

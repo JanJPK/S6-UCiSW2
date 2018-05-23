@@ -1,0 +1,61 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc GenIO.ucf -uc ADC_DAC.ucf -uc LCD.ucf -uc
+PS2_USB_SDC.ucf -p xc3s500e-fg320-4 Schematic_1.ngc Schematic_1.ngd
+
+Reading NGO file
+"C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Schemati
+c_1.ngc" ...
+Loading design module
+"C:\Users\lab\donaldtrump\226228_226141_Pajdak_Slowinski\Projekt\Winamp/LCD1x64.
+ngc"...
+Loading design module
+"C:\Users\lab\donaldtrump\226228_226141_Pajdak_Slowinski\Projekt\Winamp/SDC_File
+Reader.ngc"...
+Loading design module
+"C:\Users\lab\donaldtrump\226228_226141_Pajdak_Slowinski\Projekt\Winamp/RotaryEn
+c.ngc"...
+Loading design module
+"C:\Users\lab\donaldtrump\226228_226141_Pajdak_Slowinski\Projekt\Winamp/DACWrite
+.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "GenIO.ucf" ...
+Annotating constraints to design from ucf file "ADC_DAC.ucf" ...
+Annotating constraints to design from ucf file "LCD.ucf" ...
+Annotating constraints to design from ucf file "PS2_USB_SDC.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem - The Period constraint <PERIOD = 20.0ns HIGH 50%;>
+   [GenIO.ucf(2)], is specified using the Net Period method which is not
+   recommended. Please use the Timespec PERIOD method.
+
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'N10' has no driver
+WARNING:NgdBuild:452 - logical net 'N11' has no driver
+WARNING:NgdBuild:452 - logical net 'N12' has no driver
+WARNING:NgdBuild:452 - logical net 'N13' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   4
+
+Total memory usage is 118416 kilobytes
+
+Writing NGD file "Schematic_1.ngd" ...
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "Schematic_1.bld"...

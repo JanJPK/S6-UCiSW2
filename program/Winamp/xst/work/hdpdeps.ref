@@ -1,0 +1,17 @@
+V3 13
+FL C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Module1.vhd 2018/05/22.17:03:13 P.20131013
+EN work/Module1 1527001397 \
+      FL C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Module1.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Module1/Behavioral 1527001398 \
+      FL C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Module1.vhd \
+      EN work/Module1 1527001397
+FL C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Schematic_1.vhf 2018/05/22.16:58:12 P.20131013
+EN work/Schematic_1 1527001399 \
+      FL C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Schematic_1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Schematic_1/BEHAVIORAL 1527001400 \
+      FL C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Schematic_1.vhf \
+      EN work/Schematic_1 1527001399 CP LCD1x64 CP SDC_FileReader CP RotaryEnc \
+      CP FDRS CP DACWrite CP Module1

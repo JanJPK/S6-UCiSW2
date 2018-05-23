@@ -1,0 +1,144 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+% Wersja: 06.11.2017
+\documentclass{article}
+
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage[nottoc]{tocbibind} % bibliografia
+%\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+\setlength\parindent{12pt} % Removes all indentation from paragraphs
+%\usepackage{times} % Uncomment to use the Times New Roman font
+
+\usepackage[export]{adjustbox}
+
+\usepackage[utf8]{inputenc} % Język polski
+\usepackage{polski}
+\usepackage[polish]{babel}
+
+\usepackage[top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry} % Marginesy
+\usepackage{listings} % Kod programu
+\usepackage{indentfirst} % Wcięcie przy pomocy \par
+\usepackage{multicol} % Kilka kolumn dla itemize
+\usepackage[table,xcdraw]{xcolor} % Dla tabel
+\usepackage{float} % Blokowanie tabeli przed przemieszczeniem
+%\usepackage{karnaugh-map} % Karnaugh
+
+%\renewcommand{\labelenumi}{\alph{enumi}.} % Zamienia litery w enumerate na a, b, c, ...
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{UCiSW 2 \\ \textit{Odtwarzacz .wav}} % Title
+
+%\author{name \textsc{name}} % Author name
+
+\date{23.05.2018} % Date for the report
+%\date{\today} % Date for the report
+
+\begin{document}
+
+\maketitle % Insert the title, author and date
+
+\begin{center}
+\begin{tabular}{l r}
+Informacja: & XX  \\ % Date the experiment was performed 
+%Prowadzący: & Mgr inż. Jan Paweł II % Instructor/supervisor
+Prowadzący: & Dr inż. Jarosław Sugier
+\end{tabular}
+\end{center}
+
+\tableofcontents % Spis treści
+
+% If you wish to include an abstract, uncomment the lines below
+% \begin{abstract}
+% Abstract text
+% \end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 0
+%----------------------------------------------------------------------------------------
+
+%\begin{multicols}{2}
+%	\begin{itemize}
+%		\item 
+%	\end{itemize}
+%\end{multicols}
+
+%\newpage
+%\section{Tytuł}} 
+%\subsection{Tytuł}
+%\par Tekst
+
+%\begin{itemize}
+%	\item\textit{Tekst} - opis
+%\end{itemize}
+
+%\begin{enumerate}
+%	\item Opis
+%\end{enumerate}
+
+%\begin{center}
+%	\includegraphics[scale=0.6, center]{nazwa_pliku}
+%\end{center}
+
+%\begin{lstlisting}[basicstyle=\small]
+%	kod programu;
+%\end{lstlisting}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Wprowadzenie}
+\subsection{Cel projektu}
+\par Celem projektu było stworzenie programu wczytującego plik .wav z karty pamięci, pobranie metadanych i odtworzenie dźwięku.
+\subsection{Sprzęt}
+\begin{itemize}
+	\item{Spartan-3E (XC3S500E)}
+	\item{Karta SD}
+	\item{Głośnik}
+\end{itemize}
+
+\subsection{Teoria}
+\par 
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Projekt}
+\subsection{Hierarchia}
+
+\subsection{Schemat}
+
+\subsection{Opis modułu}
+\subsubsection{Stany}
+
+\subsection{Symulacja}
+%----------------------------------------------------------------------------------------
+%	SECTION 3
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Implementacja}
+%----------------------------------------------------------------------------------------
+%	SECTION 4
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Podsumowanie}
+\subsection{Ocena krytyczna}
+
+\subsection{Wnioski}
+\par TEST \cite{ug230} \cite{wave} \cite{zsk} test
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\newpage
+\bibliographystyle{abbrv}
+\bibliography{ucisw_bib}
+
+
+%----------------------------------------------------------------------------------------
+\end{document}

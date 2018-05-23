@@ -1,0 +1,550 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Schematic_1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Schematic_1.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Schematic_1"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Schematic_1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Module1.vhd" in Library work.
+Entity <module1> compiled.
+Entity <module1> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Schematic_1.vhf" in Library work.
+Architecture behavioral of Entity schematic_1 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Schematic_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Module1> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Schematic_1> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Schematic_1.vhf" line 174: Instantiating black box module <LCD1x64>.
+WARNING:Xst:2211 - "C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Schematic_1.vhf" line 185: Instantiating black box module <SDC_FileReader>.
+WARNING:Xst:753 - "C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Schematic_1.vhf" line 203: Unconnected output port 'RotR' of component 'RotaryEnc'.
+WARNING:Xst:2211 - "C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Schematic_1.vhf" line 203: Instantiating black box module <RotaryEnc>.
+    Set user-defined property "INIT =  0" for instance <XLXI_23> in unit <Schematic_1>.
+    Set user-defined property "INIT =  0" for instance <XLXI_24> in unit <Schematic_1>.
+    Set user-defined property "INIT =  0" for instance <XLXI_25> in unit <Schematic_1>.
+    Set user-defined property "INIT =  0" for instance <XLXI_26> in unit <Schematic_1>.
+WARNING:Xst:2211 - "C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Schematic_1.vhf" line 238: Instantiating black box module <DACWrite>.
+Entity <Schematic_1> analyzed. Unit <Schematic_1> generated.
+
+Analyzing Entity <Module1> in library <work> (Architecture <behavioral>).
+Entity <Module1> analyzed. Unit <Module1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Module1>.
+    Related source file is "C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Module1.vhd".
+WARNING:Xst:1305 - Output <Sample<3:0>> is never assigned. Tied to value 0000.
+WARNING:Xst:646 - Signal <sampleRate> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <numChannels> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bitsPerSample> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 7                                              |
+    | Clock              | Clk                       (rising_edge)        |
+    | Reset              | Reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | q0r                                            |
+    | Power Up State     | q0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 64-bit register for signal <Line>.
+    Found 8-bit register for signal <Sample<11:4>>.
+    Found 64-bit up counter for signal <counter>.
+    Found 16-bit up counter for signal <counterSampleRate>.
+    Found 64-bit comparator not equal for signal <Line_2$cmp_ne0000> created at line 136.
+    Found 64-bit comparator not equal for signal <Line_22$cmp_ne0000> created at line 141.
+    Found 64-bit comparator not equal for signal <Line_24$cmp_ne0000> created at line 145.
+    Found 64-bit comparator not equal for signal <Line_32$cmp_ne0000> created at line 148.
+    Found 64-bit comparator not equal for signal <Line_40$cmp_ne0000> created at line 151.
+    Found 64-bit comparator not equal for signal <Line_50$cmp_ne0000> created at line 154.
+    Found 64-bit comparator not equal for signal <Line_60$cmp_ne0000> created at line 158.
+    Found 64-bit comparator not equal for signal <Line_8$cmp_ne0000> created at line 138.
+    Found 64-bit comparator greatequal for signal <state$cmp_ge0000> created at line 89.
+    Found 16-bit comparator greatequal for signal <state$cmp_ge0001> created at line 106.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred  72 D-type flip-flop(s).
+	inferred  10 Comparator(s).
+Unit <Module1> synthesized.
+
+
+Synthesizing Unit <Schematic_1>.
+    Related source file is "C:/Users/lab/donaldtrump/226228_226141_Pajdak_Slowinski/Projekt/Winamp/Schematic_1.vhf".
+WARNING:Xst:646 - Signal <SF_CE0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Schematic_1> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 64-bit up counter                                     : 1
+# Registers                                            : 72
+ 1-bit register                                        : 72
+# Comparators                                          : 10
+ 16-bit comparator greatequal                          : 1
+ 64-bit comparator greatequal                          : 1
+ 64-bit comparator not equal                           : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <XLXI_41/state/FSM> on signal <state[1:8]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ q0    | 00000001
+ q1    | 00000100
+ q2    | 00001000
+ q3    | 00010000
+ q3b   | 01000000
+ q4    | 00100000
+ q5    | 10000000
+ q0r   | 00000010
+-------------------
+Reading core <LCD1x64.ngc>.
+Reading core <SDC_FileReader.ngc>.
+Reading core <RotaryEnc.ngc>.
+Reading core <DACWrite.ngc>.
+Loading core <LCD1x64> for timing and area information for instance <XLXI_1>.
+Loading core <SDC_FileReader> for timing and area information for instance <XLXI_3>.
+Loading core <RotaryEnc> for timing and area information for instance <XLXI_7>.
+Loading core <DACWrite> for timing and area information for instance <XLXI_35>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 64-bit up counter                                     : 1
+# Registers                                            : 76
+ Flip-Flops                                            : 76
+# Comparators                                          : 10
+ 16-bit comparator greatequal                          : 1
+ 64-bit comparator greatequal                          : 1
+ 64-bit comparator not equal                           : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Schematic_1> ...
+
+Optimizing unit <Module1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Schematic_1, actual ratio is 19.
+INFO:Xst:2260 - The FF/Latch <cntDigit_0> in Unit <XLXI_1> is equivalent to the following 4 FFs/Latches : <cntDigit_0_1> <cntDigit_0_2> <cntDigit_0_3> <cntDigit_0_4> 
+INFO:Xst:2260 - The FF/Latch <cntDigit_1> in Unit <XLXI_1> is equivalent to the following 2 FFs/Latches : <cntDigit_1_1> <cntDigit_1_2> 
+INFO:Xst:2260 - The FF/Latch <State_16> in Unit <XLXI_1> is equivalent to the following FF/Latch : <State_16_1> 
+INFO:Xst:2260 - The FF/Latch <XLXI_90/State_21> in Unit <XLXI_3> is equivalent to the following FF/Latch : <XLXI_90/State_21_1> 
+INFO:Xst:2260 - The FF/Latch <XLXI_90/State_17> in Unit <XLXI_3> is equivalent to the following FF/Latch : <XLXI_90/State_17_1> 
+INFO:Xst:2260 - The FF/Latch <XLXI_90/State_11> in Unit <XLXI_3> is equivalent to the following FF/Latch : <XLXI_90/State_11_1> 
+INFO:Xst:2260 - The FF/Latch <XLXI_90/State_15> in Unit <XLXI_3> is equivalent to the following FF/Latch : <XLXI_90/State_15_1> 
+INFO:Xst:2260 - The FF/Latch <XLXI_86/XLXI_1/regMISO_1> in Unit <XLXI_3> is equivalent to the following FF/Latch : <XLXI_86/XLXI_1/regMISO_1_1> 
+INFO:Xst:2260 - The FF/Latch <XLXI_86/XLXI_1/regMISO_3> in Unit <XLXI_3> is equivalent to the following FF/Latch : <XLXI_86/XLXI_1/regMISO_3_1> 
+INFO:Xst:2260 - The FF/Latch <XLXI_86/XLXI_1/regMISO_4> in Unit <XLXI_3> is equivalent to the following FF/Latch : <XLXI_86/XLXI_1/regMISO_4_1> 
+INFO:Xst:2260 - The FF/Latch <cntDigit_0> in Unit <XLXI_1> is equivalent to the following 4 FFs/Latches : <cntDigit_0_1> <cntDigit_0_2> <cntDigit_0_3> <cntDigit_0_4> 
+INFO:Xst:2260 - The FF/Latch <cntDigit_1> in Unit <XLXI_1> is equivalent to the following 2 FFs/Latches : <cntDigit_1_1> <cntDigit_1_2> 
+INFO:Xst:2260 - The FF/Latch <State_16> in Unit <XLXI_1> is equivalent to the following FF/Latch : <State_16_1> 
+INFO:Xst:2260 - The FF/Latch <XLXI_90/State_21> in Unit <XLXI_3> is equivalent to the following FF/Latch : <XLXI_90/State_21_1> 
+INFO:Xst:2260 - The FF/Latch <XLXI_90/State_17> in Unit <XLXI_3> is equivalent to the following FF/Latch : <XLXI_90/State_17_1> 
+INFO:Xst:2260 - The FF/Latch <XLXI_90/State_11> in Unit <XLXI_3> is equivalent to the following FF/Latch : <XLXI_90/State_11_1> 
+INFO:Xst:2260 - The FF/Latch <XLXI_90/State_15> in Unit <XLXI_3> is equivalent to the following FF/Latch : <XLXI_90/State_15_1> 
+INFO:Xst:2260 - The FF/Latch <XLXI_86/XLXI_1/regMISO_1> in Unit <XLXI_3> is equivalent to the following FF/Latch : <XLXI_86/XLXI_1/regMISO_1_1> 
+INFO:Xst:2260 - The FF/Latch <XLXI_86/XLXI_1/regMISO_3> in Unit <XLXI_3> is equivalent to the following FF/Latch : <XLXI_86/XLXI_1/regMISO_3_1> 
+INFO:Xst:2260 - The FF/Latch <XLXI_86/XLXI_1/regMISO_4> in Unit <XLXI_3> is equivalent to the following FF/Latch : <XLXI_86/XLXI_1/regMISO_4_1> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 163
+ Flip-Flops                                            : 163
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Schematic_1.ngr
+Top Level Output File Name         : Schematic_1
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 32
+
+Cell Usage :
+# BELS                             : 2333
+#      GND                         : 5
+#      INV                         : 65
+#      LUT1                        : 166
+#      LUT2                        : 197
+#      LUT2_D                      : 5
+#      LUT2_L                      : 9
+#      LUT3                        : 261
+#      LUT3_D                      : 11
+#      LUT3_L                      : 22
+#      LUT4                        : 623
+#      LUT4_D                      : 36
+#      LUT4_L                      : 82
+#      MULT_AND                    : 9
+#      MUXCY                       : 473
+#      MUXF5                       : 47
+#      MUXF6                       : 10
+#      MUXF7                       : 5
+#      OR2                         : 2
+#      VCC                         : 5
+#      XORCY                       : 300
+# FlipFlops/Latches                : 730
+#      FD                          : 95
+#      FDC                         : 6
+#      FDCE                        : 64
+#      FDE                         : 233
+#      FDP                         : 1
+#      FDR                         : 79
+#      FDRE                        : 111
+#      FDRS                        : 19
+#      FDRSE                       : 9
+#      FDS                         : 113
+# RAMS                             : 1
+#      RAMB16_S9_S9                : 1
+# Shift Registers                  : 2
+#      SRL16                       : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 31
+#      IBUF                        : 6
+#      IOBUF                       : 4
+#      OBUF                        : 21
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      892  out of   4656    19%  
+ Number of Slice Flip Flops:            730  out of   9312     7%  
+ Number of 4 input LUTs:               1479  out of   9312    15%  
+    Number used as logic:              1477
+    Number used as Shift registers:       2
+ Number of IOs:                          32
+ Number of bonded IOBs:                  32  out of    232    13%  
+ Number of BRAMs:                         1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk_50MHz                          | BUFGP                  | 733   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------------+------------------------+-------+
+Control Signal                                  | Buffer(FF name)        | Load  |
+------------------------------------------------+------------------------+-------+
+XLXI_41/state_FSM_FFd7(XLXI_41/state_FSM_FFd7:Q)| NONE(XLXI_41/counter_0)| 64    |
+Reset                                           | IBUF                   | 7     |
+------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 12.473ns (Maximum Frequency: 80.173MHz)
+   Minimum input arrival time before clock: 6.475ns
+   Maximum output required time after clock: 10.459ns
+   Maximum combinational path delay: 7.263ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk_50MHz'
+  Clock period: 12.473ns (frequency: 80.173MHz)
+  Total number of paths / destination ports: 39689 / 1439
+-------------------------------------------------------------------------
+Delay:               12.473ns (Levels of Logic = 20)
+  Source:            XLXI_3/XLXI_89/cntBytes_5 (FF)
+  Destination:       XLXI_3/XLXI_89/cntBytes_11 (FF)
+  Source Clock:      Clk_50MHz rising
+  Destination Clock: Clk_50MHz rising
+
+  Data Path: XLXI_3/XLXI_89/cntBytes_5 to XLXI_3/XLXI_89/cntBytes_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.591   0.706  XLXI_89/cntBytes_5 (XLXI_89/cntBytes<5>)
+     LUT2_L:I0->LO         1   0.704   0.104  XLXI_89/Full512_mux0000212 (XLXI_89/Full512_mux0000212)
+     LUT4:I3->O            2   0.704   0.451  XLXI_89/Full512_mux0000217 (XLXI_89/Full512_mux0000217)
+     LUT4_D:I3->O          5   0.704   0.712  XLXI_89/NextState_0_cmp_eq000011 (XLXI_89/N3)
+     LUT3:I1->O           13   0.704   1.018  XLXI_89/iDO_Rdy1 (DO_Rdy)
+     end scope: 'XLXI_3'
+     LUT3:I2->O            4   0.704   0.762  XLXI_41/FR_DO_Pop_and00001 (XLXN_262)
+     begin scope: 'XLXI_3'
+     LUT4:I0->O           14   0.704   1.035  XLXI_89/DoPOP_and00001 (XLXI_89/DoPOP)
+     LUT3:I2->O            1   0.704   0.000  XLXI_89/Mcount_cntBytes_lut<0> (XLXI_89/Mcount_cntBytes_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_89/Mcount_cntBytes_cy<0> (XLXI_89/Mcount_cntBytes_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_89/Mcount_cntBytes_cy<1> (XLXI_89/Mcount_cntBytes_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_89/Mcount_cntBytes_cy<2> (XLXI_89/Mcount_cntBytes_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_89/Mcount_cntBytes_cy<3> (XLXI_89/Mcount_cntBytes_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_89/Mcount_cntBytes_cy<4> (XLXI_89/Mcount_cntBytes_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_89/Mcount_cntBytes_cy<5> (XLXI_89/Mcount_cntBytes_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_89/Mcount_cntBytes_cy<6> (XLXI_89/Mcount_cntBytes_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_89/Mcount_cntBytes_cy<7> (XLXI_89/Mcount_cntBytes_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_89/Mcount_cntBytes_cy<8> (XLXI_89/Mcount_cntBytes_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_89/Mcount_cntBytes_cy<9> (XLXI_89/Mcount_cntBytes_cy<9>)
+     MUXCY:CI->O           0   0.059   0.000  XLXI_89/Mcount_cntBytes_cy<10> (XLXI_89/Mcount_cntBytes_cy<10>)
+     XORCY:CI->O           1   0.804   0.000  XLXI_89/Mcount_cntBytes_xor<11> (XLXI_89/Result<11>)
+     FDRE:D                    0.308          XLXI_89/cntBytes_11
+    ----------------------------------------
+    Total                     12.473ns (7.685ns logic, 4.788ns route)
+                                       (61.6% logic, 38.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_50MHz'
+  Total number of paths / destination ports: 169 / 165
+-------------------------------------------------------------------------
+Offset:              6.475ns (Levels of Logic = 4)
+  Source:            Reset (PAD)
+  Destination:       XLXI_3/XLXI_90/State_30 (FF)
+  Destination Clock: Clk_50MHz rising
+
+  Data Path: Reset to XLXI_3/XLXI_90/State_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           106   1.218   1.461  Reset_IBUF (Reset_IBUF)
+     begin scope: 'XLXI_3'
+     LUT3:I0->O           10   0.704   1.057  XLXI_90/State_mux0002<9>131 (XLXI_90/N44)
+     LUT4:I0->O            1   0.704   0.420  XLXI_90/State_mux0002<1>1_SW0 (N79)
+     FDS:S                     0.911          XLXI_90/State_30
+    ----------------------------------------
+    Total                      6.475ns (3.537ns logic, 2.938ns route)
+                                       (54.6% logic, 45.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_50MHz'
+  Total number of paths / destination ports: 53 / 18
+-------------------------------------------------------------------------
+Offset:              10.459ns (Levels of Logic = 7)
+  Source:            XLXI_3/XLXI_89/cntBytes_5 (FF)
+  Destination:       LED_0 (PAD)
+  Source Clock:      Clk_50MHz rising
+
+  Data Path: XLXI_3/XLXI_89/cntBytes_5 to LED_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.591   0.706  XLXI_89/cntBytes_5 (XLXI_89/cntBytes<5>)
+     LUT2_L:I0->LO         1   0.704   0.104  XLXI_89/Full512_mux0000212 (XLXI_89/Full512_mux0000212)
+     LUT4:I3->O            2   0.704   0.451  XLXI_89/Full512_mux0000217 (XLXI_89/Full512_mux0000217)
+     LUT4_D:I3->O          5   0.704   0.808  XLXI_89/NextState_0_cmp_eq000011 (XLXI_89/N3)
+     LUT2:I0->O            1   0.704   0.420  XLXI_89/NotEmpty1 (XLXN_647)
+     OR2:I0->O             4   0.704   0.587  XLXI_92 (Busy)
+     end scope: 'XLXI_3'
+     OBUF:I->O                 3.272          LED_0_OBUF (LED_0)
+    ----------------------------------------
+    Total                     10.459ns (7.383ns logic, 3.076ns route)
+                                       (70.6% logic, 29.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               7.263ns (Levels of Logic = 4)
+  Source:            Clk_50MHz (PAD)
+  Destination:       SPI_SCK (PAD)
+
+  Data Path: Clk_50MHz to SPI_SCK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     BUFGP:I->O          735   1.457   1.410  Clk_50MHz_BUFGP (Clk_50MHz_BUFGP)
+     begin scope: 'XLXI_35'
+     INV:I->O              1   0.704   0.420  SPI_SCK1_INV_0 (SPI_SCK)
+     end scope: 'XLXI_35'
+     OBUF:I->O                 3.272          SPI_SCK_OBUF (SPI_SCK)
+    ----------------------------------------
+    Total                      7.263ns (5.433ns logic, 1.830ns route)
+                                       (74.8% logic, 25.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.58 secs
+ 
+--> 
+
+Total memory usage is 225264 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :   20 (   0 filtered)
+
