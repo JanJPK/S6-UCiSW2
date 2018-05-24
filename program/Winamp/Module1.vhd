@@ -109,7 +109,7 @@ begin
                nextState <= Q3B;
             end if;
             
-         -- Powrot do Q2 lub przejscie na koniec gdy koniec pliku
+         -- Powrot do Q3 lub przejscie na koniec gdy koniec pliku
          when Q4 =>
             if FR_Busy = '0' then
                nextState <= Q5;

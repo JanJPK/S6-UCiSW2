@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.23)  23 MAY 2018 23:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.23)  24 MAY 2018 22:26
 entering extended mode
 **./sprawozdanie.tex
 (sprawozdanie.tex
@@ -21,6 +21,13 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
 ("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\latex\siunitx\siunitx.sty"
 ("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
 Package: expl3 2018-05-13 L3 programming layer (loader) 
@@ -837,53 +844,8 @@ Now handling font encoding U ...
 Package: polski 2017/05/04 v1.3.4 Polish language package
 
    Inputenc package detected. Catcodes not changed.
-   Switching to Polish text encoding and Polish maths fonts.
-("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot4enc.def"
-File: ot4enc.def 2017/04/05 v2.0i Standard LaTeX file
-Now handling font encoding OT4 ...
-... no UTF-8 mapping file for font encoding OT4
-)
-LaTeX Font Info:    Try loading font information for OT4+cmr on input line 360.
-
-
-("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polski\ot4cmr.fd"
-File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT4/cmr/bx/n on input line 360.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT4/cmss/m/n on input line 360.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT4/cmr/m/it on input line 360.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT4/cmtt/m/n on input line 360.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT4/cmss/bx/n on input line 360.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT4/cmr/bx/it on input line 360.
-LaTeX Font Info:    Encoding `OT1' has changed to `OT4' for symbol font
-(Font)              `operators' in the math version `normal' on input line 360.
-
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT4/cmr/m/n on input line 360.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/plm/m/it on input line 360.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/plsy/m/n on input line 360.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/plex/m/n on input line 360.
-LaTeX Font Info:    Encoding `OT1' has changed to `OT4' for symbol font
-(Font)              `operators' in the math version `bold' on input line 360.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT4/cmr/bx/n on input line 360.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/plm/b/it on input line 360.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/plsy/b/n on input line 360.
-)
-("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty"
+) ("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2018/02/14 3.18 The Babel package
-
 ("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def"
 File: switch.def 2018/02/14 3.18 Babel switching mechanism
 )
@@ -1060,20 +1022,18 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ) (sprawozdanie.aux)
 \openout1 = `sprawozdanie.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
@@ -1264,47 +1224,6 @@ G,.JBIG2,.JB2,.eps]
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count305
-LaTeX Font Info:    Try loading font information for OML+plm on input line 42.
-("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polski\omlplm.fd"
-File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 42.
-
-
-("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polski\omsplsy.fd"
-File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 42.
-
-
-("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polski\omxplex.fd"
-File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 42.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 42.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 42.
-LaTeX Font Info:    Try loading font information for OT4+cmss on input line 42.
-
-
-("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polski\ot4cmss.fd"
-File: ot4cmss.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 42.
-
-
-("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polski\ot4cmtt.fd"
-File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 44.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 44.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 44.
-
 
 LaTeX Warning: No \author given.
 
@@ -1315,44 +1234,63 @@ LaTeX Warning: No \author given.
  [1
 
 {C:/Users/JPK/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 101.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 102.
 
 
 ("C:\Users\JPK\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 101.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
 
-[2] [3] [4] [5] (sprawozdanie.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 14--17
-[]\OT4/cmr/m/n/10 Xilinx.  \OT4/cmr/m/it/10 Spartan-3E FPGA Star-ter Kit Bo-ard
- User Gu-ide\OT4/cmr/m/n/10 .  xi-
+[2]
+<photo/sch_horizontal.png, id=16, 1181.91562pt x 537.50812pt>
+File: photo/sch_horizontal.png Graphic file (type png)
+<use photo/sch_horizontal.png>
+Package pdftex.def Info: photo/sch_horizontal.png  used on input line 116.
+(pdftex.def)             Requested size: 590.95636pt x 268.7534pt.
+ [3 <./photo/sch_horizontal.png>] [4]
+Overfull \hbox (10.27525pt too wide) in paragraph at lines 182--183
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [6] (sprawozdanie.aux) ) 
+[5] [6] [7]
+<photo/states.png, id=35, 1054.94125pt x 630.355pt>
+File: photo/states.png Graphic file (type png)
+<use photo/states.png>
+Package pdftex.def Info: photo/states.png  used on input line 321.
+(pdftex.def)             Requested size: 527.46935pt x 315.17673pt.
+ [8 <./photo/states.png>] [9] [10] (sprawozdanie.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 14--17
+[]\T1/cmr/m/n/10 Xilinx.  \T1/cmr/m/it/10 Spartan-3E FPGA Star-ter Kit Bo-ard U
+ser Gu-ide\T1/cmr/m/n/10 .  xi-
+ []
+
+) [11] (sprawozdanie.aux) ) 
 Here is how much of TeX's memory you used:
- 18155 strings out of 493305
- 339701 string characters out of 3130672
- 380725 words of memory out of 3000000
- 21492 multiletter control sequences out of 15000+200000
- 547742 words of font info for 62 fonts, out of 3000000 for 9000
+ 18481 strings out of 493305
+ 340500 string characters out of 3130672
+ 406303 words of memory out of 3000000
+ 21827 multiletter control sequences out of 15000+200000
+ 548161 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,63p,281b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/JPK/AppData/Local/Programs/MiKTeX 2.9/fonts
-/enc/dvips/pl/plit.enc}{C:/Users/JPK/AppData/Local/Programs/MiKTeX 2.9/fonts/en
-c/dvips/pl/plrm.enc}<C:/Users/JPK/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+ 41i,7n,63p,293b,1657s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\JPK\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
+our\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\JPK\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\JPK\AppData\Local\MiKTeX\
+2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\JPK\AppData\Local
+\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\JPK\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\J
+PK\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:
+\Users\JPK\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200
+.pk> <C:\Users\JPK\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecti1728.pk> <C:\Users\JPK\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\ecrm1728.pk><C:/Users/JPK/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb><C:/Users/JPK/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/pl/plbx10.pfb><C:/Users/JPK/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/pl/plbx12.pfb><C:/Users/JPK/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/pl/plr10.pfb><C:/Users/JPK/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/pl/plr12.pfb><C:/Users/JPK/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/pl/plr17.pfb><C:/Users/JPK/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Users/JPK/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/pl/plti12.pfb>
-Output written on sprawozdanie.pdf (6 pages, 71543 bytes).
+fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on sprawozdanie.pdf (11 pages, 213972 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
+ 385 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
