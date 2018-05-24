@@ -33,9 +33,9 @@
 %	DOCUMENT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{UCiSW 2 \\ \textit{Odtwarzacz .wav}} % Title
+\title{UCiSW 2 \\ \textit{Odtwarzacz WAVE}} % Title
 
-%\author{name \textsc{name}} % Author name
+\author{Jan \textsc{Pajdak} \\ Wojciech \textsc{Słowiński}} % Author name
 
 \date{23.05.2018} % Date for the report
 %\date{\today} % Date for the report
@@ -46,7 +46,7 @@
 
 \begin{center}
 \begin{tabular}{l r}
-Informacja: & XX  \\ % Date the experiment was performed 
+%Informacja: & XX  \\ % Date the experiment was performed 
 %Prowadzący: & Mgr inż. Jan Paweł II % Instructor/supervisor
 Prowadzący: & Dr inż. Jarosław Sugier
 \end{tabular}
@@ -96,7 +96,7 @@ Prowadzący: & Dr inż. Jarosław Sugier
 \newpage
 \section{Wprowadzenie}
 \subsection{Cel projektu}
-\par Celem projektu było stworzenie programu wczytującego plik .wav z karty pamięci, pobranie metadanych i odtworzenie dźwięku.
+\par Celem projektu było stworzenie programu wczytującego plik WAVE z karty pamięci, pobranie metadanych i odtworzenie dźwięku.
 \subsection{Sprzęt}
 \begin{itemize}
 	\item{Spartan-3E (XC3S500E)}
@@ -105,7 +105,24 @@ Prowadzący: & Dr inż. Jarosław Sugier
 \end{itemize}
 
 \subsection{Teoria}
-\par 
+\par Waveform Audio File Format, znany również jako WAVE lub jako rozszerzenie .wav to standard plików audio opracowany przez Microsoft oraz IBM w 1991 roku\cite{wiki}.
+\par Proces odtwarzania należy rozpocząć od pobrania metadanych - informacji o zapisanym dźwięku:
+\begin{itemize}
+	\item Częstotliwości próbkowania
+	\item Rozmiaru próbki
+	\item Ilości kanałów
+\end{itemize}
+\par Informacje te znajdują się w ustalonych bajtach w pliku\cite{wave}:
+\begin{center}
+	\includegraphics[scale=0.6, center]{photo/wav_format.png}
+\end{center}
+
+\newpage
+\par Blok danych z próbkami może przyjąć bardzo różną postać w zależności od parametrów dźwięku. Poniżej zostały przedstawione dwa przykłady czterech próbek:
+\begin{center}
+	\includegraphics[scale=0.6, center]{photo/samples.png}
+\end{center}
+
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
@@ -123,10 +140,29 @@ Prowadzący: & Dr inż. Jarosław Sugier
 	\item{SDC\_FileReader} Pozwala odczytywać dane z karty SD
 		\subitem W projekcie odczytuje on pliki .wav ("11" => FExt)
 		\subitem Nazwa pliku: kod ASCII => FName
+		\subitem Moduł pracuje Busy => '1'
+		\subitem Bajt został wczytany DO\_Rdy => '1'
+			\subsubitem Bajt znajduje się w DO(7:0)
+		\subitem Przejście do kolejnego bajtu '1' => DO\_Pop
 	\item{LCD1x64}: Wyświetla dane na ekranie Spartan 3E - w tym przypadku metadane pliku .wav
 	\item{DACWrite}: Wysyła dane do przetwornika DAC
-		\subitem Sygnał pojawia się na wszystkich pinach ("1111" => Addr)
-		\subitem Sygnał wysyłany jest natychmiastowo ("0011" => Cmd)
+		\subitem Sygnał pojawia się na wszystkich pinach ("1111" => Addr) \cite{ug230}
+		\subitem Sygnał wysyłany jest natychmiastowo ("0011" => Cmd) \cite{ug230}
+		\subitem Dane muszą zostać przesłane do DATA(11:0)
+			\subsubitem Moduł rozpoczyna przetwarzanie po otrzymaniu '1' na Start
+\end{itemize}
+
+\newpage
+\subsubsection{Przetwarzanie błędów SDC\_FileReader}
+\begin{center}
+	\includegraphics[scale=0.5, center]{photo/sch_error.png}
+\end{center}
+\par Projekt zawiera cztery przerzutniki odpowiedzialne za informowanie użytkownika o błędach modułu SDC\_FileReader. Kody błędów\cite{zsk}: 
+\begin{itemize} 
+	\item Error( 0 ) = ‘1’ => błąd odczytu sektora
+	\item Error( 1 ) = ‘1’ => zły format karty
+	\item Error( 2 ) = ‘1’ => nie odnaleziono pliku
+	\item Error( 3 ) = ‘1’ => błąd rozmiaru pliku
 \end{itemize}
 
 \newpage
@@ -177,7 +213,7 @@ end process process1;
 \end{lstlisting}
 
 \newpage
-\subsubsection{Proces 2 - wybór następnego stanu}
+\subsubsection{Stany oraz ich procesy}
 \begin{lstlisting}[basicstyle=\small]
 process2 : process(state, FR_DO, FR_DO_Rdy, FR_Busy, counter, counterSampleRate)
 begin
@@ -315,27 +351,77 @@ Start <= '1' when state = Q4
 	end case;
 end process process2;
 \end{lstlisting}
+
+\subsubsection{Pozostałe fragmenty kodu}
+
+\begin{lstlisting}[basicstyle=\small]
+process5: process(Clk, state, counter)
+	begin
+	if state = Q0R then
+		counter <= X"0000000000000000";
+	elsif rising_edge(Clk) and (state = Q2  or state = Q4) then
+		counter <= counter + 1;
+	end if;
+end process process5;
+
+
+FR_DO_Pop <= '1' when (state = Q1 or state = Q3) and FR_DO_Rdy = '1'
+	else '0';
+	
+Blank <= X"0000";
+\end{lstlisting}
+\par Proces process5 jest odpowiedzialny za kontrolę nad licznikiem odczytanych bajtów - inkrementacją po stanach odczytujących bajty oraz zerowaniu w stanie resetowania.
+\par Przedostatni fragment odpowiada za wyjście dające znać modułowi SDC\_FileReader że może załadować kolejny bajt.
+\par Ostatnia linia kodu jest wymagana przez moduł odpowiedzialny za kontrolę wyświetlacza - określa wygaszone znaki.
+
 \newpage 
 \subsubsection{Diagram stanów}
 \begin{center}
 	\includegraphics[scale=0.5, center]{photo/states.png}
 \end{center}
 
+\newpage
 \subsection{Symulacja}
+\subsubsection{Testbench}
+
+\subsubsection{Wczytywanie metadanych}
+\begin{center}
+	\includegraphics[scale=0.52, center]{photo/d_meta_1.png}
+\end{center}
+\par Na powyższym obrazie wyraźnie widać jak wczytywane zostają poszczególne metadane a następnie umieszczone w Line na potrzeby wyświetlacza. 
+\par Zbliżenie z widocznym stanem Q2:
+\begin{center}
+	\includegraphics[scale=1.0, center]{photo/d_meta_2.png}
+\end{center}
+
+\subsubsection{Wczytywanie próbek}
+\par Ze względu na ilość oraz częstotliwość wczytywania próbek przedstawiony zostanie tylko fragment procesu:
+\begin{center}
+	\includegraphics[scale=0.52, center]{photo/d_sound_1.png}
+\end{center}
+\par Program spędza większość czasu w stanie oczekiwania pomiędzy wczytywaniem próbek. 
+\par Zbliżenie na moment wyjścia ze stanu Q3B, wczytanie próbki i powrót do oczekiwania:
+\begin{center}
+	\includegraphics[scale=0.65, center]{photo/d_sound_2.png}
+\end{center}
 %----------------------------------------------------------------------------------------
 %	SECTION 3
 %----------------------------------------------------------------------------------------
 \newpage
-\section{Implementacja}
+\section{Instrukcja obsługi}
+\par Kontrola urządzenia odbywa się przez obracanie enkoderem. Obrócenie enkodera w lewą stronę rozpoczyna pracę; w prawą - wysyła sygnał Reset
+\par Program informuje użytkownika o zdarzeniach przy użyciu diod LED
+\par Na wyświetlaczu pojawiają się metadane pliku .wav
+\begin{center}
+	\includegraphics[scale=0.6, center]{photo/photo_2.png}
+\end{center}
 %----------------------------------------------------------------------------------------
 %	SECTION 4
 %----------------------------------------------------------------------------------------
 \newpage
 \section{Podsumowanie}
-\subsection{Ocena krytyczna}
-
-\subsection{Wnioski}
-\par TEST \cite{ug230} \cite{wave} \cite{zsk} test
+\par Projekt posiada zasadniczą wadę - nie jest przystosowany do odtwarzania różnych rodzajów dźwięku. Moduł jest w stanie przetworzyć wyłącznie pliki z jednokanałowym dźwiękiem, próbkach o wielkości 8 bitów i częstotliwości 8000 KHz. 
+\par Kolejnymi krokami w rozwoju projektu byłyby modyfikacje modułu tak by wysyłał próbki w spobób określony przez metadane.
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------

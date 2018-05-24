@@ -3,17 +3,20 @@
 \contentsline {subsection}{\numberline {1.1}Cel projektu}{2}
 \contentsline {subsection}{\numberline {1.2}Sprz\IeC {\k e}t}{2}
 \contentsline {subsection}{\numberline {1.3}Teoria}{2}
-\contentsline {section}{\numberline {2}Projekt}{3}
-\contentsline {subsection}{\numberline {2.1}Schemat oraz wykorzystane modu\IeC {\l }y}{3}
-\contentsline {subsection}{\numberline {2.2}Modu\IeC {\l } Module1}{4}
-\contentsline {subsubsection}{\numberline {2.2.1}WE/WY}{4}
-\contentsline {subsubsection}{\numberline {2.2.2}Sygna\IeC {\l }y}{4}
-\contentsline {subsubsection}{\numberline {2.2.3}Proces 1 - przej\IeC {\'s}cie mi\IeC {\k e}dzy stanami}{4}
-\contentsline {subsubsection}{\numberline {2.2.4}Proces 2 - wyb\IeC {\'o}r nast\IeC {\k e}pnego stanu}{5}
-\contentsline {subsubsection}{\numberline {2.2.5}Diagram stan\IeC {\'o}w}{8}
-\contentsline {subsection}{\numberline {2.3}Symulacja}{8}
-\contentsline {section}{\numberline {3}Implementacja}{9}
-\contentsline {section}{\numberline {4}Podsumowanie}{10}
-\contentsline {subsection}{\numberline {4.1}Ocena krytyczna}{10}
-\contentsline {subsection}{\numberline {4.2}Wnioski}{10}
-\contentsline {section}{Literatura}{11}
+\contentsline {section}{\numberline {2}Projekt}{4}
+\contentsline {subsection}{\numberline {2.1}Schemat oraz wykorzystane modu\IeC {\l }y}{4}
+\contentsline {subsubsection}{\numberline {2.1.1}Przetwarzanie b\IeC {\l }\IeC {\k e}d\IeC {\'o}w SDC\_FileReader}{5}
+\contentsline {subsection}{\numberline {2.2}Modu\IeC {\l } Module1}{6}
+\contentsline {subsubsection}{\numberline {2.2.1}WE/WY}{6}
+\contentsline {subsubsection}{\numberline {2.2.2}Sygna\IeC {\l }y}{6}
+\contentsline {subsubsection}{\numberline {2.2.3}Proces 1 - przej\IeC {\'s}cie mi\IeC {\k e}dzy stanami}{6}
+\contentsline {subsubsection}{\numberline {2.2.4}Stany oraz ich procesy}{7}
+\contentsline {subsubsection}{\numberline {2.2.5}Pozosta\IeC {\l }e fragmenty kodu}{9}
+\contentsline {subsubsection}{\numberline {2.2.6}Diagram stan\IeC {\'o}w}{10}
+\contentsline {subsection}{\numberline {2.3}Symulacja}{11}
+\contentsline {subsubsection}{\numberline {2.3.1}Testbench}{11}
+\contentsline {subsubsection}{\numberline {2.3.2}Wczytywanie metadanych}{11}
+\contentsline {subsubsection}{\numberline {2.3.3}Wczytywanie pr\IeC {\'o}bek}{11}
+\contentsline {section}{\numberline {3}Instrukcja obs\IeC {\l }ugi}{12}
+\contentsline {section}{\numberline {4}Podsumowanie}{13}
+\contentsline {section}{Literatura}{14}

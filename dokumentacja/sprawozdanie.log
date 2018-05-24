@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.23)  24 MAY 2018 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.23)  25 MAY 2018 00:46
 entering extended mode
 **./sprawozdanie.tex
 (sprawozdanie.tex
@@ -1224,9 +1224,6 @@ G,.JBIG2,.JB2,.eps]
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count305
-
-LaTeX Warning: No \author given.
-
 (sprawozdanie.toc)
 \tf@toc=\write3
 \openout3 = `sprawozdanie.toc'.
@@ -1242,37 +1239,82 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
+<photo/wav_format.png, id=12, 269.005pt x 419.5675pt>
+File: photo/wav_format.png Graphic file (type png)
+<use photo/wav_format.png>
+Package pdftex.def Info: photo/wav_format.png  used on input line 117.
+(pdftex.def)             Requested size: 161.40424pt x 251.74243pt.
 
-[2]
-<photo/sch_horizontal.png, id=16, 1181.91562pt x 537.50812pt>
+[2 <./photo/wav_format.png>]
+<photo/samples.png, id=20, 645.41125pt x 202.7575pt>
+File: photo/samples.png Graphic file (type png)
+<use photo/samples.png>
+Package pdftex.def Info: photo/samples.png  used on input line 123.
+(pdftex.def)             Requested size: 387.24974pt x 121.65543pt.
+ [3 <./photo/samples.png>]
+<photo/sch_horizontal.png, id=25, 1181.91562pt x 537.50812pt>
 File: photo/sch_horizontal.png Graphic file (type png)
 <use photo/sch_horizontal.png>
-Package pdftex.def Info: photo/sch_horizontal.png  used on input line 116.
+Package pdftex.def Info: photo/sch_horizontal.png  used on input line 133.
 (pdftex.def)             Requested size: 590.95636pt x 268.7534pt.
- [3 <./photo/sch_horizontal.png>] [4]
-Overfull \hbox (10.27525pt too wide) in paragraph at lines 182--183
+ [4 <./photo/sch_horizontal.png>]
+<photo/sch_error.png, id=29, 989.94844pt x 288.3272pt>
+File: photo/sch_error.png Graphic file (type png)
+<use photo/sch_error.png>
+Package pdftex.def Info: photo/sch_error.png  used on input line 158.
+(pdftex.def)             Requested size: 494.973pt x 144.16324pt.
+ [5 <./photo/sch_error.png>] [6]
+Overfull \hbox (10.27525pt too wide) in paragraph at lines 218--219
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[5] [6] [7]
-<photo/states.png, id=35, 1054.94125pt x 630.355pt>
+[7] [8] [9]
+<photo/states.png, id=48, 1054.94125pt x 630.355pt>
 File: photo/states.png Graphic file (type png)
 <use photo/states.png>
-Package pdftex.def Info: photo/states.png  used on input line 321.
+Package pdftex.def Info: photo/states.png  used on input line 380.
 (pdftex.def)             Requested size: 527.46935pt x 315.17673pt.
- [8 <./photo/states.png>] [9] [10] (sprawozdanie.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 14--17
-[]\T1/cmr/m/n/10 Xilinx.  \T1/cmr/m/it/10 Spartan-3E FPGA Star-ter Kit Bo-ard U
-ser Gu-ide\T1/cmr/m/n/10 .  xi-
+ [10 <./photo/states.png>]
+<photo/d_meta_1.png, id=53, 1093.08376pt x 120.45pt>
+File: photo/d_meta_1.png Graphic file (type png)
+<use photo/d_meta_1.png>
+Package pdftex.def Info: photo/d_meta_1.png  used on input line 389.
+(pdftex.def)             Requested size: 568.40683pt x 62.63435pt.
+<photo/d_meta_2.png, id=54, 453.94594pt x 117.43875pt>
+File: photo/d_meta_2.png Graphic file (type png)
+<use photo/d_meta_2.png>
+Package pdftex.def Info: photo/d_meta_2.png  used on input line 394.
+(pdftex.def)             Requested size: 453.94482pt x 117.43845pt.
+<photo/d_sound_1.png, id=55, 1053.9375pt x 111.41624pt>
+File: photo/d_sound_1.png Graphic file (type png)
+<use photo/d_sound_1.png>
+Package pdftex.def Info: photo/d_sound_1.png  used on input line 400.
+(pdftex.def)             Requested size: 548.05066pt x 57.93677pt.
+<photo/d_sound_2.png, id=56, 787.44188pt x 108.405pt>
+File: photo/d_sound_2.png Graphic file (type png)
+<use photo/d_sound_2.png>
+Package pdftex.def Info: photo/d_sound_2.png  used on input line 405.
+(pdftex.def)             Requested size: 511.83116pt x 70.4624pt.
+ [11 <./photo/d_meta_1.png> <./photo/d_meta_2.png> <./photo/d_sound_1.png> <./p
+hoto/d_sound_2.png>]
+<photo/photo_2.png, id=60, 924.45375pt x 736.7525pt>
+File: photo/photo_2.png Graphic file (type png)
+<use photo/photo_2.png>
+Package pdftex.def Info: photo/photo_2.png  used on input line 416.
+(pdftex.def)             Requested size: 554.67653pt x 442.05492pt.
+ [12 <./photo/photo_2.png>] [13] (sprawozdanie.bbl
+Overfull \hbox (7.98991pt too wide) in paragraph at lines 4--7
+[]\T1/cmr/m/n/10 dr in» Ja-ro-sªaw Su-gier.  Strona ze-stawu spartan-3e.  http:
+//www.zsk.ict.pwr.wroc.pl/zsk_ftp/fpga/. 
  []
 
-) [11] (sprawozdanie.aux) ) 
+) [14] (sprawozdanie.aux) ) 
 Here is how much of TeX's memory you used:
- 18481 strings out of 493305
- 340500 string characters out of 3130672
- 406303 words of memory out of 3000000
- 21827 multiletter control sequences out of 15000+200000
- 548161 words of font info for 66 fonts, out of 3000000 for 9000
+ 18524 strings out of 493305
+ 341367 string characters out of 3130672
+ 406333 words of memory out of 3000000
+ 21861 multiletter control sequences out of 15000+200000
+ 548836 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,63p,293b,1657s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\JPK\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
@@ -1282,15 +1324,16 @@ s\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\JPK\AppData\Local\MiKTeX\
 \MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\JPK\AppDa
 ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\J
 PK\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:
-\Users\JPK\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200
+\Users\JPK\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200
 .pk> <C:\Users\JPK\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecti1728.pk> <C:\Users\JPK\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
-\dpi600\ecrm1728.pk><C:/Users/JPK/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb><C:/Users/JPK/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on sprawozdanie.pdf (11 pages, 213972 bytes).
+ecrm1200.pk> <C:\Users\JPK\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\ecti1728.pk> <C:\Users\JPK\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
+appen\ec\dpi600\ecrm1728.pk><C:/Users/JPK/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/JPK/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on sprawozdanie.pdf (14 pages, 1261133 bytes).
 PDF statistics:
- 385 PDF objects out of 1000 (max. 8388607)
+ 442 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
